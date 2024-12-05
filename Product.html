@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Game/Product</title>
+        <link rel="stylesheet" href="HomeStyles.css">
+    </head>
+    <body>
+        <!-- Header Section (Small Header for Future Buttons) -->
+        <header>
+            <nav class="navbar">
+                <ul>
+                    <li><a href="index.html" >Home</a></li>
+                    <li><a href="Research.html" >Research</a></li>
+                    <li><a href="Planning.html" >Planning</a></li>
+                    <li><a href="Product.html" class= "active">Game/Product</a></li>
+                    <li><a href="Evaluation.html">Evaluation</a></li>
+                    <li><a href="AboutMe.html">About Me</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <!-- Title Section with Image -->
+    <section class="title-section">
+        <div class="title-content">
+            <h1 id="page-title">Game/Product</h1>
+        </div>
+    </section>
+
+    <main> 
+  <h1>Unreal Engine Gameplay</h1>
+  <p>This video shows me playing the entire game showcasing the game mechanics and all of the UI functions and shows the whole story behind the whole game and how i implemented it into the project this will include the mechanics being used and showing how they are used and put into the game to create the final project and have a finished game.</p>
+
+   
+  <iframe
+   width="560"
+   height="315"
+   src="https://www.youtube.com/embed/_bLfgWeAuqo"
+   title="Youtube Media Player"
+   frameBorder="0"
+   allow="autoplay; encrypted-media"
+   allowFullScreen
+   ></iframe>
+ 
+   
+   <h2>Unreal Engine Art</h2>
+  <p>This video shows all the art i used inside of my game that built up the visual for the game. This includes my player and player animations the UI, the collectables and bounce pads aswell as all the attack animations and boss art and animations inside of the whole game to make it look intresting and add a feel to the game that allows the player to feel embraced in the game.</p>
+
+ <iframe
+   width="560"
+   height="315"
+   src="https://www.youtube.com/embed/jy8ALJT1RrU"
+   title="Youtube Media Player"
+   frameBorder="0"
+    allow="autoplay; encrypted-media"
+   allowFullScreen
+   ></iframe>
+
+  
+    
+   <h3>Unreal Engine Code</h3>
+    <p>This video shows some of the code i used during my project including all my mechanics and gameplay including my movement and mechanics i used for example the code for the boss aswell as the code for launch pads and dialogue systems that allows the game to function the way it should.</p>
+    
+  <iframe
+   width="560"
+   height="315"
+   src="https://www.youtube.com/embed/vYN_WkSZnjE"
+   title="Youtube Media Player"
+   frameBorder="0"
+   allow="autoplay; encrypted-media"
+   allowFullScreen
+   ></iframe>
+ 
+    <h1>Player Design</h1>
+    <!-- Image Below Text -->
+        <div class="image-container">
+            <img src="character.jpg" class="small-image">
+        </div>
+
+         <h1>Level Sprites</h1>
+        <!-- Image Below Text -->
+        <div class="image-container">
+            <img src="levelsprites.png" class="small-image">
+        </div>
+        <h1>Collectable</h1>
+        <!-- Image Below Text -->
+        <div class="image-container">
+            <img src="collectable.jpg" class="small-image">
+        </div>
+         <h1>Bounce Pad</h1>
+        <!-- Image Below Text -->
+        <div class="image-container">
+            <img src="mushroom.png" class="small-image">
+        </div>
+            <h1>Boss</h1>
+        <!-- Image Below Text -->
+        <div class="image-container">
+            <img src="boss.jpg" class="small-image">
+        </div>
+
+        <h1>Player Hud</h1>
+         
+        <!-- Image Below Text -->
+        <div class="image-container">
+            <img src="playerhud.jpg" class="small-image">
+        </div>
+        <h1>Boss Hud</h1>
+        <!-- Image Below Text -->
+        <div class="image-container">
+            <img src="bosshud.jpg" class="small-image">
+        </div>
+         <h1>Main Menu</h1>
+        <!-- Image Below Text -->
+        <div class="image-container">
+            <img src="mainmenu.jpg" class="small-image">
+        </div>
+            <h1>Options Menu</h1>
+        <!-- Image Below Text -->
+        <div class="image-container">
+            <img src="options.jpg" class="small-image">
+        </div>
+
+        <h1> Game Completed</h1>
+        <!-- Image Below Text -->
+        <div class="image-container">
+            <img src="gamecomplete.jpg" class="small-image">
+        </div>
+
+        <h1>Death Screen</h1>
+        <!-- Image Below Text -->
+        <div class="image-container">
+            <img src="deathscreen.jpg" class="small-image">
+        </div>
+
+        <!-- Audio Buttons Section with Headings and Progress Bars -->
+    <div class="audio-buttons">
+        <!-- Song 1 -->
+        <h2>Boss Fight Music</h2>
+        <button onclick="playAudio('audio1')">Play Audio</button>
+        <progress id="progress1" value="0" max="100"></progress>
+
+        <!-- Song 2 -->
+        <h2>Click Sound</h2>
+        <button onclick="playAudio('audio2')">Play Audio</button>
+        <progress id="progress2" value="0" max="100"></progress>
+
+        <!-- Song 3 -->
+        <h2>Pickup Collectables</h2>
+        <button onclick="playAudio('audio3')">Play Audio</button>
+        <progress id="progress3" value="0" max="100"></progress>
+
+        <!-- Song 4 -->
+        <h2>Hover over Buttons</h2>
+        <button onclick="playAudio('audio4')">Play Audio</button>
+        <progress id="progress4" value="0" max="100"></progress>
+
+        <!-- Song 5 -->
+        <h2>When Damaged</h2>
+        <button onclick="playAudio('audio5')">Play Audio</button>
+        <progress id="progress5" value="0" max="100"></progress>
+
+        <!-- Song 6 -->
+        <h2>Jump Sound</h2>
+        <button onclick="playAudio('audio6')">Play Audio</button>
+        <progress id="progress6" value="0" max="100"></progress>
+
+        <!-- Song 7 -->
+        <h2>Main Menu Music</h2>
+        <button onclick="playAudio('audio7')">Play Audio</button>
+        <progress id="progress7" value="0" max="100"></progress>
+    </div>
+
+    <!-- Audio Files -->
+    <audio id="audio1" src="bossmusic.mp3" preload="auto"></audio>
+    <audio id="audio2" src="click.mp3" preload="auto"></audio>
+    <audio id="audio3" src="collect.wav" preload="auto"></audio>
+    <audio id="audio4" src="hover.wav" preload="auto"></audio>
+    <audio id="audio5" src="hurt.wav" preload="auto"></audio>
+    <audio id="audio6" src="jump.wav" preload="auto"></audio>
+    <audio id="audio7" src="menumusic.mp3" preload="auto"></audio>
+
+    <script>
+        function playAudio(audioId) {
+            // Stop all audio elements before playing the new one
+            const allAudios = document.querySelectorAll('audio');
+            allAudios.forEach(audio => audio.pause());
+
+            // Get the selected audio element and progress bar
+            const audio = document.getElementById(audioId);
+            const progress = document.getElementById('progress' + audioId.slice(-1)); // Dynamically get the correct progress bar
+
+            // Reset progress bar to start position
+            progress.value = 0;
+
+            // Play the audio
+            audio.play();
+
+            // Update the progress bar as the audio plays
+            audio.ontimeupdate = function() {
+                const progressPercentage = (audio.currentTime / audio.duration) * 100;
+                progress.value = progressPercentage;
+            };
+
+            // Reset progress bar when audio ends
+            audio.onended = function() {
+                progress.value = 0; // Reset progress to 0
+            };
+        }
+    </script>
+    <h1>Player Controller</h1>
+    <iframe 
+    width="800"
+   height="500"
+    src="https://blueprintue.com/render/8k1nz966/" 
+    scrolling="no" allowfullscreen>
+    </iframe>
+    
+    <h1>Boss Controller</h1>
+    <iframe 
+    width="800"
+   height="500"
+    src="https://blueprintue.com/render/zyhbaan0/" 
+    scrolling="no" allowfullscreen></iframe>
+    <h1>Spikes Code</h1>
+    <iframe 
+     width="800"
+   height="500"
+   src="https://blueprintue.com/render/7li1iekp/"
+    scrolling="no" allowfullscreen></iframe>
+    <h1>Lever Code</h1>
+    <iframe 
+     width="800"
+   height="500"
+    src="https://blueprintue.com/render/5npcw3pc/"
+    scrolling="no" allowfullscreen></iframe>
+    <h1>Jump Pad Code</h1>
+    <iframe 
+    width="800"
+   height="500"
+    src="https://blueprintue.com/render/ju6qtcmp/" 
+    scrolling="no" allowfullscreen></iframe>
+    <h1>TV Code</h1>
+    <iframe
+    width="800"
+   height="500"
+    src="https://blueprintue.com/render/c9jc3ia5/" 
+    scrolling="no" allowfullscreen></iframe>
+    <h1>Chest Code</h1>
+    <iframe 
+    width="800"
+   height="500"
+    src="https://blueprintue.com/render/r3nw5852/" 
+    scrolling="no" allowfullscreen></iframe>
+    <h1>Dialogue Code</h1>
+    <iframe 
+    width="800"
+   height="500"
+    src="https://blueprintue.com/render/9l_nomh8/" 
+    scrolling="no" allowfullscreen></iframe>
+ </main>
+</html>
+
+
